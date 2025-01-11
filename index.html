@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +6,99 @@
     <title>Tic Tac Toe</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="bg-[#0c021b] text-[#fffade] relative">
+    <header class="p-8 flex border justify-center">
+        <section>
+            <h1 class="text-4xl font-bold">Tic Tac Toe Game</h1>
+        </section>
+    </header>
+
+    <main class="py-10">
+
+        <section id="symbolSelection" 
+                 class="flex justify-center items-center
+                        absolute top-0 w-full h-screen
+                      bg-black/70">
+            
+            <article class="rounded-xl bg-[#0c021b] w-3/4 h-5/6 flex flex-col justify-around items-center py-3">
+                
+                <nav class="flex w-4/5 justify-around items-stretch">
+                    <div class="flex flex-col gap-3">
+                        <div class="flex justify-center">
+                            <h2 class="text-2xl font-semibold">Game Mode</h2>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <button class="py-2 px-3 bg-[#b0a2f7] text-[#0c021b] font-semibold rounded-xl 
+                            hover:scale-105 shadow-hover transition-all hover:transition-all">Player Vs Player</button>
+                            <button class="py-2 px-3 bg-[#b0a2f7] text-[#0c021b] font-semibold rounded-xl 
+                            hover:scale-105 shadow-hover transition-all hover:transition-all">Vs Computer</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <div class="flex justify-center">
+                            <h2 class="text-2xl font-semibold">Introduce your name</h2>
+                        </div>
+                        <div class="flex flex-wrap flex-col gap-3">
+                            <input type="text" placeholder="Player1"  class="bg-gray-700/30 border border-gray-200 p-2 rounded-xl text-[#e8d5b5] font-semibold hover:bg-gray-700/50 transition-colors hover:transition-colors focus:shadow-md focus:shadow-gray-700 focus:outline-none" id="playerOneName">
+                            <input type="text" placeholder="Player2"  class=" hidden bg-gray-700/30 border border-gray-200 p-2 rounded-xl text-[#e8d5b5] font-semibold hover:bg-gray-700/50 transition-colors hover:transition-colors focus:shadow-md focus:shadow-gray-700 focus:outline-none" id="playerTwoName">
+                        </div>
+                    </div>
+                </nav>
+
+                <nav class="flex flex-col gap-7 w-3/4">
+                    <div class="flex justify-center">
+                        <h2 class="text-2xl font-semibold">Select your symbol</h2>
+                    </div>
+                    <section class="flex justify-around">
+                        <div class="border rounded-xl p-3 hover:cursor-pointer
+                                    hover:scale-105 shadow-hover transition-all hover:transition-all">
+                            <picture>
+                                <img src="./media/img/Select=Circle.png" alt="Circle">
+                            </picture>
+                        </div>
+                        <div class="border rounded-xl p-3 hover:cursor-pointer
+                                    hover:scale-105 shadow-hover transition-all hover:transition-all">
+                            <picture>
+                                <img src="./media/img/Select=Cross.png" alt="">
+                            </picture>
+                        </div>
+                    </section>
+                </nav>
+                <div class="flex justify-center">
+                    <button id="startGameButton"
+                            class="py-2 px-3 bg-[#e8d5b5] text-[#0c021b] font-semibold rounded-xl 
+                                   hover:scale-105 shadow-hover transition-all hover:transition-all">
+                        Start Game
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <section id="board">
+            <div class="grid">
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./scripts/game.js"></script>
 </body>
-</html>
+</html> -->

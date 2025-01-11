@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", serif;
+}
+
+.shadow-hover:hover {
+    box-shadow: 0px 0px 22px 0px #e8d5b551;
+}
+
+.selected {
+    border: 1px solid green
+}
+
