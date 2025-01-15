@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,16 +10,16 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-[#0c021b] text-[#fffade] relative">
-    <header class="p-8 flex border justify-center">
+    <header class="p-10 flex justify-center">
         <section>
             <h1 class="text-4xl font-bold">Tic Tac Toe Game</h1>
         </section>
     </header>
 
-    <main class="py-10">
+    <main class="pb-10">
 
         <section id="symbolSelection" 
-                 class="flex justify-center items-center
+                 class="hidden justify-center items-center
                         absolute top-0 w-full h-screen
                       bg-black/70">
             
@@ -31,9 +31,9 @@
                             <h2 class="text-2xl font-semibold">Game Mode</h2>
                         </div>
                         <div class="flex flex-col gap-3">
-                            <button class="py-2 px-3 bg-[#b0a2f7] text-[#0c021b] font-semibold rounded-xl 
+                            <button id="btnPvp" class="py-2 px-3 bg-[#b0a2f7] text-[#0c021b] font-semibold rounded-xl 
                             hover:scale-105 shadow-hover transition-all hover:transition-all">Player Vs Player</button>
-                            <button class="py-2 px-3 bg-[#b0a2f7] text-[#0c021b] font-semibold rounded-xl 
+                            <button id="btnVsComputer" class="py-2 px-3 bg-[#b0a2f7] text-[#0c021b] font-semibold rounded-xl 
                             hover:scale-105 shadow-hover transition-all hover:transition-all">Vs Computer</button>
                         </div>
                     </div>
@@ -50,17 +50,19 @@
 
                 <nav class="flex flex-col gap-7 w-3/4">
                     <div class="flex justify-center">
-                        <h2 class="text-2xl font-semibold">Select your symbol</h2>
+                        <h2 class="text-2xl font-semibold">Player 1 symbol</h2>
                     </div>
                     <section class="flex justify-around">
                         <div class="border rounded-xl p-3 hover:cursor-pointer
-                                    hover:scale-105 shadow-hover transition-all hover:transition-all">
+                                    hover:scale-105 shadow-hover transition-all hover:transition-all"
+                             id="btnCircle">
                             <picture>
                                 <img src="./media/img/Select=Circle.png" alt="Circle">
                             </picture>
                         </div>
                         <div class="border rounded-xl p-3 hover:cursor-pointer
-                                    hover:scale-105 shadow-hover transition-all hover:transition-all">
+                                    hover:scale-105 shadow-hover transition-all hover:transition-all"
+                             id="btnCross">
                             <picture>
                                 <img src="./media/img/Select=Cross.png" alt="">
                             </picture>
@@ -76,29 +78,69 @@
                 </div>
             </article>
         </section>
+        
+        <section class="w-9/12 m-auto pb-4">
+            
+            <div class="flex justify-between">
+                <div class="border rounded-full py-2 px-3">
+                    <section>
+                        <picture id="playerSymbolPicture">
+                        
+                        </picture>
+                        <h3 id="playerName_Points" class="font-semibold text-xl"></h3>
+                    </section>
 
-        <section id="board">
-            <div class="grid">
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <section>
+                        <h3 class="font-semibold text-lg">Games Won:</h3>
+                    </section>
                 </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+                <div class="border rounded-full py-2 px-3">
+                    <section>
+                        <picture id="opponentSymbolPicture">
+                        
+                        </picture>
+                        <h3 id="OpponentName_Points" class="font-semibold text-xl"></h3>
+                    </section>
+
+                    <section>
+                        <h3 class="font-semibold text-lg">Games Won:</h3>
+                    </section>
                 </div>
             </div>
+        </section>
+        
+        <section id="board" class="flex justify-center">
+
+            <div class="grid pt-16 h-[60vh] w-10/12 justify-items-center grid-rows-3">
+
+                <div class="border-b-2 border-blue-400 w-3/6 flex">
+                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class=" item-grid h-full w-[33.3%]"></div>
+                </div>
+
+                <div class="border-b border-blue-400 w-3/6 flex">
+                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class=" item-grid h-full w-[33.3%]"></div>
+                </div>
+
+                <div class="w-3/6 flex">
+                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class=" item-grid h-full w-[33.3%]"></div>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
     <script src="./scripts/game.js"></script>
+    <script src="./scripts/objects.js"></script>
+    <script src="./scripts/verifications.js"></script>
+    <script src="./scripts/specialEvents.js"></script>
 </body>
-</html> -->
+</html>

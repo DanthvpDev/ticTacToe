@@ -9,6 +9,18 @@
 }
 
 .selected {
-    border: 1px solid green
+    background-color: #46a846;
 }
 
+.item-grid {
+    cursor: pointer;
+}
+
+.item-grid,
+.item-grid:hover  {
+    transition: all .2s ease-in-out;
+}
+
+.item-grid:hover {
+    background-color: #1c0938;
+}
