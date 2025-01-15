@@ -19,7 +19,7 @@
     <main class="pb-10">
 
         <section id="symbolSelection" 
-                 class="hidden justify-center items-center
+                 class="flex justify-center items-center
                         absolute top-0 w-full h-screen
                       bg-black/70">
             
@@ -82,29 +82,29 @@
         <section class="w-9/12 m-auto pb-4">
             
             <div class="flex justify-between">
-                <div class="border rounded-full py-2 px-3">
-                    <section>
-                        <picture id="playerSymbolPicture">
-                        
+                <div class="border rounded-full flex items-center">
+                    <section class="flex items-center rounded-full px-2">
+                        <picture id="playerSymbolPicture" class="w-12">
+
                         </picture>
                         <h3 id="playerName_Points" class="font-semibold text-xl"></h3>
                     </section>
 
-                    <section>
-                        <h3 class="font-semibold text-lg">Games Won:</h3>
+                    <section class="px-2 py-2 bg-[#5e5687] rounded-full self-stretch content-center">
+                        <h3 class="font-semibold text-lg">Games Won: <span>0</span></h3>
                     </section>
                 </div>
 
-                <div class="border rounded-full py-2 px-3">
-                    <section>
-                        <picture id="opponentSymbolPicture">
-                        
+                <div class="border rounded-full flex items-center">
+                    <section class="flex items-center rounded-full px-2">
+                        <picture id="opponentSymbolPicture"  class="w-12">
+                            
                         </picture>
                         <h3 id="OpponentName_Points" class="font-semibold text-xl"></h3>
                     </section>
 
-                    <section>
-                        <h3 class="font-semibold text-lg">Games Won:</h3>
+                    <section class="px-2 py-3 bg-[#5e5687] rounded-full self-stretch content-center">
+                        <h3 class="font-semibold text-lg">Games Won: <span>0</span></h3>
                     </section>
                 </div>
             </div>
@@ -115,21 +115,21 @@
             <div class="grid pt-16 h-[60vh] w-10/12 justify-items-center grid-rows-3">
 
                 <div class="border-b-2 border-blue-400 w-3/6 flex">
-                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
-                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
-                    <div class=" item-grid h-full w-[33.3%]"></div>
+                    <div class="item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class="item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class="item-grid h-full w-[33.3%]"></div>
                 </div>
 
                 <div class="border-b border-blue-400 w-3/6 flex">
-                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
-                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
-                    <div class=" item-grid h-full w-[33.3%]"></div>
+                    <div class="item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class="item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class="item-grid h-full w-[33.3%]"></div>
                 </div>
 
                 <div class="w-3/6 flex">
-                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
-                    <div class=" item-grid h-full border-r-2 w-[33.3%]"></div>
-                    <div class=" item-grid h-full w-[33.3%]"></div>
+                    <div class="item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class="item-grid h-full border-r-2 w-[33.3%]"></div>
+                    <div class="item-grid h-full w-[33.3%]"></div>
                 </div>
 
             </div>

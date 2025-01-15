@@ -3,6 +3,6 @@ function IsNameInputFilledOut(input) {
 }
 
 function IsSymbolSelected(object) {
-    return object.symbol ? true : false;
+    return object.symbol != undefined || object.symbol != null ? true : false;
 }
 

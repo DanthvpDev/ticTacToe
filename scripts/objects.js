@@ -8,11 +8,11 @@ class Player {
 
 
 
-function AssigningSymbolRandomly(object) {
+function AssigningSymbolRandomly() {
     let random = Math.floor(Math.random() * 11);
-    (random < 5) ? object.symbol = 'X' : object.symbol = 'O';
+    return (random < 5) ? 1 : 0;
 }
 
 function AssigningSymbolToOpponent(player1, opponent) {
-    (player1.symbol == 'O') ? opponent.symbol = 'X' : opponent.symbol = 'O';
+    (player1.symbol == 1) ? opponent.symbol = 0 : opponent.symbol = 1;
 }
